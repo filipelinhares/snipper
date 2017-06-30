@@ -20,38 +20,29 @@ Plug 'filipelinhares/snipper'
 
 ## Snippets ready to use
 
-- [ ] all
-- [ ] c
-- [ ] crystal
-- [ ] css
-- [ ] django
-- [ ] erlang
-- [ ] go
-- [ ] html
-- [ ] java
-- [ ] javascript-angular
-- [ ] javascript-jasmine-arrow
-- [ ] javascript-jsdoc
-- [ ] javascript-node
-- [ ] javascript
-- [ ] json
-- [ ] lua
-- [ ] markdown
-- [ ] python
-- [ ] rails
-- [ ] ruby
-- [ ] rust
+- [ ] All
+- [ ] Crystal
+- [ ] CSS
+- [ ] Erlang
+- [ ] Go
+- [ ] HTML
+- [ ] Node
+- [ ] Javascript
+- [ ] Mocha
+- [ ] JSON
+- [ ] Markdown
+- [ ] Ruby
 - [ ] sh
-- [ ] snippets
-- [ ] typescript
-- [ ] vue
-- [ ] xhtml
-- [ ] xml
-- [ ] zsh
+- [ ] Typescript
+- [ ] Vue
+- [ ] XHTML
+- [ ] XML
+
 
 
 
 ## Reference
+
 
 - [File name](https://github.com/SirVer/ultisnips/blob/3.1/doc/UltiSnips.txt#L548-L557)
 - [Snippet syntax](https://github.com/SirVer/ultisnips/blob/3.1/doc/UltiSnips.txt#L595-L701)

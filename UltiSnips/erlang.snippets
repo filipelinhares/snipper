@@ -1,12 +1,8 @@
-###########################################################################
-#                            TEXTMATE SNIPPETS                            #
-###########################################################################
-
 priority -50
 
 snippet pat "Case:Receive:Try Clause"
 ${1:pattern}${2: when ${3:guard}} ->
-	${4:body}
+  ${4:body}
 endsnippet
 
 snippet beh "Behaviour Directive" b
@@ -15,8 +11,8 @@ endsnippet
 
 snippet case "Case Expression"
 case ${1:expression} of
-	${2:pattern}${3: when ${4:guard}} ->
-		${5:body}
+  ${2:pattern}${3: when ${4:guard}} ->
+    ${5:body}
 end
 endsnippet
 
@@ -30,20 +26,20 @@ endsnippet
 
 snippet fun "Fun Expression"
 fun
-	(${1:pattern})${2: when ${3:guard}} ->
-		${4:body}
+  (${1:pattern})${2: when ${3:guard}} ->
+    ${4:body}
 end
 endsnippet
 
 snippet fu "Function"
 ${1:function}(${2:param})${3: when ${4:guard}} ->
-	${5:body}
+  ${5:body}
 endsnippet
 
 snippet if "If Expression"
 if
-	${1:guard} ->
-		${2:body}
+  ${1:guard} ->
+    ${2:body}
 end
 endsnippet
 
@@ -69,11 +65,11 @@ endsnippet
 
 snippet rcv "Receive Expression"
 receive
-${1:	${2:pattern}${3: when ${4:guard}} ->
-		${5:body}}
+${1:  ${2:pattern}${3: when ${4:guard}} ->
+    ${5:body}}
 ${6:after
-	${7:expression} ->
-		${8:body}}
+  ${7:expression} ->
+    ${8:body}}
 end
 endsnippet
 
@@ -83,13 +79,13 @@ endsnippet
 
 snippet try "Try Expression"
 try${1: ${2:expression}${3: of
-	${4:pattern}${5: when ${6:guard}} ->
-		${7:body}}}
+  ${4:pattern}${5: when ${6:guard}} ->
+    ${7:body}}}
 ${8:catch
-	${9:pattern}${10: when ${11:guard}} ->
-		${12:body}}
+  ${9:pattern}${10: when ${11:guard}} ->
+    ${12:body}}
 ${13:after
-	${14:body}}
+  ${14:body}}
 end
 endsnippet
 

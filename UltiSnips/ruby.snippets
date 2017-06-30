@@ -1,66 +1,13 @@
 priority -50
 
-#
-# Global functions
-#
-
-global !p
-
-def write_instance_vars(arglist, snip):
-	args = str(arglist).split(',')
-	for arg in args:
-		name = arg.strip().replace(':', ' ').split(' ', 1)[0]
-		if name:
-			snip += '  @{} = {}'.format(name, name)
-		else:
-			snip += ''
-
-endglobal
-
-#
-# Snippets
-#
-
 snippet "^#!" "#!/usr/bin/env ruby" r
 #!/usr/bin/env ruby
-$0
-endsnippet
-
-snippet "^# ?[uU][tT][fF]-?8" "# encoding: UTF-8" r
-# encoding: UTF-8
 $0
 endsnippet
 
 snippet "\b(de)?f" "def <name>..." r
 def ${1:function_name}${2:(${3:*args})}
 	$0
-end
-endsnippet
-
-snippet defi "def initialize ..."
-def initialize($1)`!p write_instance_vars(t[1],snip)`$0
-end
-endsnippet
-
-snippet defr "def <name> ... rescue ..."
-def ${1:function_name}${2:(${3:*args})}
-	$4
-rescue
-	$0
-end
-endsnippet
-
-snippet For "(<from>..<to>).each { |<i>| <block> }"
-(${1:from}..${2:to}).each { |${3:i}| $0 }
-endsnippet
-
-snippet "(\S+)\.Merge!" ".merge!(<other_hash>) { |<key>,<oldval>,<newval>| <block> }" r
-`!p snip.rv=match.group(1)`.merge!(${1:other_hash}) { |${2:key},${3:oldval},${4:newval}| ${5:block} }
-endsnippet
-
-snippet "(\S+)\.merge!" ".merge!(<other_hash>) do |<key>,<oldval>,<newval>| <block> end" r
-`!p snip.rv=match.group(1)`.merge!(${1:other_hash}) do |${2:key},${3:oldval},${4:newval}|
-	${0:block}
 end
 endsnippet
 
